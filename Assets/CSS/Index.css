@@ -1,0 +1,217 @@
+body{
+    background-color: white;
+}
+.banback{
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    background-image: url("../Imagenes/montañafog.jpg");
+    background-size: cover;
+    background-position: center;    
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+nav>ul{
+    position: absolute;
+    right: 15px;
+}
+ul{
+    display:  flex;
+    padding: 0vw;
+}
+ul > li{
+    list-style: none;
+    margin: 0 12px;
+}
+nav{
+    display: flex;
+}
+.Parrafo{
+    line-height: 1%;
+    padding: 5%;
+}
+.HELLO{
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(150, 153, 160);
+}
+.We{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5vw;
+}
+.creative{
+    font-size: 1.7vw;
+}
+.AX{
+    color: rgb(150, 153, 160);
+}
+button{ 
+    font-size: 14px;
+    border-radius: 24px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: 2px solid rgb(19, 19, 19);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    transition-duration: 0.4s;
+    
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.late{
+    padding: 5%;
+    font-size: 3vw;
+}
+.imagenes{
+    padding: 7%;
+    height: 300px;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(4, 10vw);
+    grid-template-rows: repeat(2, 10vw);
+    grid-template-areas: "uno dos tres tres"
+                         "cuatro dos cinco seis";
+    justify-content: center;
+    align-content: center;
+    gap: 3px;
+}
+.imagenes>div{
+    background-size: cover;
+}
+
+.imagenes>div:nth-of-type(1){
+    grid-area: uno;
+    background-image: url(../Imagenes/sad.png);
+}
+.imagenes>div:nth-of-type(2){
+    grid-area: dos;
+    background-image: url(../Imagenes/fight.png);
+}
+.imagenes>div:nth-of-type(3){
+    grid-area: tres;
+    background-image: url(../Imagenes/chill.png);
+}
+.imagenes>div:nth-of-type(4){
+    grid-area: cuatro;
+    background-image: url(../Imagenes/sad2.png);
+}
+.imagenes>div:nth-of-type(5){
+    grid-area: cinco;
+    background-image: url(../Imagenes/sleep.png);
+}
+.imagenes>div:nth-of-type(6){
+    grid-area: seis;
+    background-image: url(../Imagenes/walking.png);
+}
+.algo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interesado{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.hablar{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20%;
+    color: rgb(150, 153, 160);
+}
+
+.spam{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15%;
+    color: rgb(150, 153, 160);
+    margin-bottom: 0px;
+}
+.mi-footer {
+    background-color: rgb(19, 19, 19);
+    padding: 10vw;display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}    
+.redes>img{
+    padding: 5%;
+    height: 2vw;
+}
+/*Tablet*/
+@media only screen and (max-width: 1199px) and (min-width: 768px), only screen and (max-width: 767px) and (min-width: 480px) and (orientation: landscape) {
+}
+@media only screen and (max-width:479px)  {
+    header{
+        position: relative;
+    }
+    .banback{
+    height: 52vh;
+
+}
+button{ 
+    font-size: 4vw;
+    width: 20vw;
+    height: 10vw;
+}
+nav>ul{
+    position: absolute;
+    right: 5vw;
+
+}
+ul > li{
+    font-size: 3vw;
+    margin: 0px 3px;
+    margin-top: 11px;
+}
+.imagenes{
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(2, 20vw);
+    
+}
+.galeria li:last-child{
+    margin-right: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    }
+    .late{
+        padding: 5%;
+        font-size: 5vw;
+    }
+    .HELLO{
+        font-size: 10vw;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(150, 153, 160);
+    }
+    .We{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12vw;
+    }
+    .creative{
+        font-size: 4vw;
+    }
+    .redes>img{
+     height: 5vw;   
+    }
+    .interesado{
+        font-size: 4vw;
+    }
+}
